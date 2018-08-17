@@ -1,0 +1,18 @@
+swagger: '2.0'
+info:
+  title: WEBcrawler API
+  description: Faz um crawler nas URLs informadas e retorna a ocorrência da palavra informada por site.
+  version: 1.0.0
+host: localhost:5000
+basePath: /crawler/<palavra>
+schemes:
+  - http
+  
+paths:
+  /crawler/palavra:
+    get:
+      summary: Faz o Crawler buscando a palavra informada nas URLs
+      responses: 
+        '200':
+          description: 'retorna um JSON com com a ocorrência da palavra por url'
+ 
